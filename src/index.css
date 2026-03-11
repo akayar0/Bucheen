@@ -77,9 +77,8 @@ ul li a {
   transition-colors 
   duration-500;
 }
-ul li a:hover {
-  @apply 
-  text-[--color-brand-orange];
+ul li a:hover{
+  color: #FF7E67;
 }
 
 .buttons {
