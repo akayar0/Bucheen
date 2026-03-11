@@ -1,0 +1,308 @@
+/* 
+
+    css to tailwind 
+        display-flex // flex
+        justify-content // justify-center
+        allign items // items-center
+        font-size // text[x]
+        font weight // font-medium
+        backg.color // bg-[x]
+        border-radius // rounded-[x]
+        transition // duration-x
+        flex-direction // flex-col
+        width: 100% // w-full
+        transform:scale(1.1) // hover:scale-110
+
+*/
+
+@import "tailwindcss";
+
+@theme { /* özel fontu tanımla*/
+  --font-poppins: "Poppins", sans-serif;
+  --color-brand-orange: #FF7E67;
+  --color-brand-bg: #fff4f3;
+  --color-brand-hover: #fae6e4;
+  --color-brand-table-hover: #fcc2b8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  @apply sticky 
+  top-0 
+  z-[1000] 
+  flex items-center 
+  justify-center
+    bg-white py-8 mb-8;
+}
+
+.logo img {
+  @apply w-[200px] mr-[350px];
+}
+
+ul {
+    @apply flex 
+    gap-[50px] 
+    list-none;
+}
+
+ul li a {
+  @apply no-underline 
+  text-gray-500 
+  font-medium 
+  text-[17px] 
+  transition-colors 
+  duration-500;
+}
+ul li a:hover {
+  @apply text-[--color-brand-orange];
+}
+
+.buttons {
+  @apply flex 
+  gap-[15px];
+}
+
+.giris {
+  @apply ml-[350px] 
+  no-underline 
+  px-[25px] py-[10px] 
+  border border-[--color-brand-orange] 
+  rounded-[15px] 
+  text-[--color-brand-orange] 
+  font-sans transition-all 
+  duration-500 
+  hover:bg-[--color-brand-orange]
+   hover:text-white;
+}
+
+.kayit {
+  @apply no-underline 
+  px-[25px] py-[10px] 
+  border border-[--color-brand-orange] 
+  rounded-[15px] bg-[--color-brand-orange] 
+  text-white font-sans 
+  transition-all 
+  duration-500 
+  hover:bg-white 
+  hover:text-[--color-brand-orange];
+}
+
+/*  ----------  */
+    .container1 {
+    @apply flex justify-between 
+    items-center 
+    w-full h-[700px] 
+    px-5 bg-[--color-brand-bg] 
+shadow-[10px_20px_-10px_rgba(0,0,0,0.1)] border-b-[6px] 
+    border-black/5 
+    transition-colors 
+        duration-700 
+    hover:bg-[--color-brand-hover];
+    }
+
+    .container2 {
+    @apply flex 
+    justify-between 
+    items-center 
+    w-full 
+    h-[550px] 
+    px-[10px] 
+    bg-white 
+    border-b border-black;
+    }
+
+    .page3 {
+    @apply w-full 
+    h-[600px] 
+    bg-white border-b 
+    border-black;
+    }
+
+    .page4 {
+    @apply flex 
+    flex-col 
+    items-center 
+    justify-center 
+    w-full 
+    h-[1100px] 
+    bg-[--color-brand-bg] 
+    border-b 
+    border-black 
+    transition-colors 
+    duration-700 
+    hover:bg-[--color-brand-hover];
+    }
+
+    .page5 {
+    @apply flex 
+    justify-center 
+    items-baseline 
+    w-full h-[600px] 
+    bg-white mt-[200px];
+    }
+
+.yaziAlani h1 {
+  font-size: 45px !important; 
+  font-weight: 600 !important;
+  text-align: center !important;
+  font-family: 'Poppins', sans-serif !important; 
+  line-height: 1.2;
+}
+
+.yaziAlani {
+  @apply flex flex-col items-center w-full text-center;
+}
+
+/* --- Yazı Stilleri --- */
+.yazilar1 h1 {
+  @apply 
+  text-[54px] 
+  font-medium 
+  ml-[250px] 
+  font-poppins;
+}
+
+.yazilar1 p {
+  @apply 
+  text-[20px] 
+  text-[#706e6e] 
+  mt-5 
+  ml-[250px];
+}
+
+.sagKisim2 h1 {
+  @apply 
+  flex 
+  text-[50px] 
+  font-semibold 
+  mr-[250px] 
+  font-poppins;
+}
+
+.page3 h1 {
+  @apply text-[47px] 
+  font-semibold 
+  mt-[120px] 
+  ml-[200px] 
+  font-poppins;
+}
+
+.page4 h1 {
+  @apply 
+  text-center 
+  text-[45px] 
+  font-semibold 
+  font-poppins;
+}
+
+
+
+
+table {
+  @apply 
+  bg-white border 
+  border-white 
+  rounded-[15px] 
+  border-separate;
+}
+
+table td {
+  @apply 
+  p-[15px] 
+  text-[#706e6e];
+}
+
+td:first-child, td:nth-child(2) {
+  @apply 
+  rounded-[15px] 
+  transition-colors 
+  duration-500;
+}
+
+td:first-child:hover, td:nth-child(2):hover {
+  @apply 
+  bg-[--color-brand-table-hover];
+}
+
+
+
+.container3 {
+  @apply 
+  flex 
+  flex-col 
+  items-center 
+  justify-center 
+  w-0.8 h-[850px] 
+  mx-auto 
+  mt-[-120px];
+}
+
+.card {
+  @apply 
+  flex 
+  items-center 
+  justify-center 
+  w-[350px] h-[570px] 
+  bg-white rounded-[20px] 
+  overflow-hidden 
+  shadow-[0_10px_20px_rgba(0,0,0,0.1)] 
+  cursor-pointer gap-[30px] 
+  transition-transform 
+  duration-700 
+  hover:scale-110;
+}
+
+.card:nth-child(2) { @apply mt-[150px]; }
+.card:nth-child(3) { @apply mt-[300px]; }
+
+.cards {
+  @apply 
+  flex 
+  flex-col 
+  w-[450px] h-[250px] 
+  bg-white rounded-[20px] 
+  mt-[50px] 
+  p-5 
+  shadow-[0_10px_20px_rgba(0,0,0,0.05)] 
+  transition-all 
+  duration-700 
+  hover:border 
+  hover:border-[#afabab] 
+  hover:scale-110;
+}
+
+
+
+
+        .lastPage {
+        @apply 
+        flex w-[99.2vw] 
+        h-[300px] 
+        gap-5 
+        bg-[--color-brand-bg];
+        }
+
+        .solKisim{
+          margin-left: 50px;
+        }
+
+/* Mobil Ayarlar */
+@media screen and (max-width: 768px) {
+  .navbar, .container1, .container2, .page3, .page4, .page5, .lastPage {
+    @apply flex-col h-auto p-5 text-center;
+  }
+  .navbar ul { @apply hidden; }
+  .logo img, .giris, .yazilar1 h1, .yazilar1 p, table, .sagKisim2 h1, .page3 h1, .page4 p, .solKisim, .sagKisim {
+    @apply m-0 w-full;
+  }
+}
