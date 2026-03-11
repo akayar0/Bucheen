@@ -10,6 +10,7 @@ Bucheen, kullanıcıların potansiyel eşleşmelerini bulmalarına yardımcı ol
 - **Dinamik İkonlar:** `FontAwesome` ve `React-Icons` kütüphaneleri ile optimize edilmiş görsel yapı.
 - **Tailwind CSS Entegrasyonu:** Performanslı ve yönetilebilir stil yapısı için Tailwind CSS kullanılmıştır.
 - **Kullanıcı Etkileşimi:** Sayfa içindeki butonlar ve form elemanları JavaScript event handler yapıları ile (alert mekanizmaları vb.) aktifleştirilerek, kullanıcıya dinamik geri bildirimler sağlanmıştır.
+- **Profesyonel Deployment (Vercel):** Proje, CI/CD süreçlerine uygun şekilde Vercel platformu üzerinde yayına alınmıştır. GitHub üzerindeki her güncelleme otomatik olarak canlı ortama aktarılacak şekilde konfigüre edilmiştir.
 
 ## 🛠️ Kullanılan Teknolojiler
 
@@ -17,6 +18,10 @@ Bucheen, kullanıcıların potansiyel eşleşmelerini bulmalarına yardımcı ol
 - **Styling:** Tailwind CSS, Custom CSS Variables
 - **Icons:** FontAwesome, React-Icons
 - **Deployment:** Vercel
+
+## 🌐 Canlı Demo
+
+Projeyi canlı ortamda incelemek için: https://bucheen.vercel.app/
 
 
 ## 📷 Ekran Görüntüleri:
